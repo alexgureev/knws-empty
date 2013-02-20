@@ -1,6 +1,94 @@
 {
-    "hash": "a74f7bd65d0ae2ca32c0903af24500e2",
+    "hash": "ac19d22cd5bdcd3c07cc9f85b29923c1",
     "packages": [
+        {
+            "name": "knws/knws",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barif/knws.git",
+                "reference": "019b5a30b4c3dcd906c968aee7537a37e779a59a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barif/knws/zipball/019b5a30b4c3dcd906c968aee7537a37e779a59a",
+                "reference": "019b5a30b4c3dcd906c968aee7537a37e779a59a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2013-02-20 13:59:28",
+            "type": "framework",
+            "autoload": {
+                "psr-0": {
+                    "Knws": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Barif",
+                    "email": "dev@knws.ru",
+                    "homepage": "http://knws.ru",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Knws framework library",
+            "homepage": "http://knws.ru",
+            "keywords": [
+                "framework"
+            ]
+        },
+        {
+            "name": "swiftmailer/swiftmailer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swiftmailer/swiftmailer.git",
+                "reference": "b6bfc8f7f8ae5dac7883885ee323dc3b53ab7d21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/b6bfc8f7f8ae5dac7883885ee323dc3b53ab7d21",
+                "reference": "b6bfc8f7f8ae5dac7883885ee323dc3b53ab7d21",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "time": "2013-02-04 10:09:01",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "lib/swift_required.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Chris Corbyn"
+                }
+            ],
+            "description": "Swiftmailer, free feature-rich PHP mailer",
+            "homepage": "http://swiftmailer.org",
+            "keywords": [
+                "mail",
+                "mailer"
+            ]
+        },
         {
             "name": "symfony/yaml",
             "version": "dev-master",
@@ -105,6 +193,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "symfony/yaml": 20,
-        "twig/twig": 20
+        "twig/twig": 20,
+        "swiftmailer/swiftmailer": 20,
+        "knws/knws": 20
     }
 }
