@@ -1,0 +1,17 @@
+{
+    "name": "root/knws",
+
+    "autoload": {
+        "psr-0": { "Symfony\\Component\\Yaml": "" }
+    },
+    "target-dir": "Symfony/Component/Yaml",
+
+    "require": {
+        "symfony/yaml": "2.3.*@dev",
+	 "twig/twig": "1.12.*@dev",
+	 "swiftmailer/swiftmailer": "4.3.*@dev"
+    },
+    "config": {
+        "vendor-dir": "library"
+    }
+}
