@@ -1,9 +1,21 @@
 {
-    "name": "root/knws",
+    "name": "knws/empty",
+    "description": "Empty project to develop with Knws framework.",
+    "authors": [
+        {
+            "name": "Barif",
+            "email": "dev@knws.ru",
+            "homepage": "http://knws.ru",
+            "role": "Developer"
+        }
+    ],
+
+    "homepage": "http://knws.ru",
 
     "autoload": {
         "psr-0": { "Symfony\\Component\\Yaml": "" }
     },
+
     "target-dir": "Symfony/Component/Yaml",
 
     "require": {
