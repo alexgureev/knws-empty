@@ -13,12 +13,10 @@
     "homepage": "http://knws.ru",
 
     "require": {
-        "symfony/yaml": "2.3.*@dev",
-	 "twig/twig": "1.12.*@dev",
-	 "swiftmailer/swiftmailer": "4.3.*@dev",
          "knws/knws": "dev-master"
     },
     "config": {
         "vendor-dir": "library"
-    }
+    },
+    "minimum-stability": "alpha"
 }
