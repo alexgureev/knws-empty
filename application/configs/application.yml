@@ -1,0 +1,13 @@
+logger:
+  logLevel: 100
+modules:
+  enabled:
+    - Config
+    - Logger
+    - Translation
+    - Template
+config:
+  Translation:
+    fallback: 'ru_RU'
+  Template:
+    engine: 'Twig'
