@@ -6,8 +6,18 @@ modules:
     - Logger
     - Translation
     - Template
+    - DB
 config:
   Translation:
     fallback: 'ru_RU'
   Template:
     engine: 'Twig'
+  DB:
+    engine: 'Mysqli'
+    user: 'knws'
+    host: 'localhost'
+    password: 'fVNrJPsKF2UqxvPoqtnG'
+    database: 'knws'
+    tableprefix: 'pfx_'
+  Logger:
+    channel: 'Knws'

@@ -1,0 +1,240 @@
+<ul class="lesson-buttons">
+        <li class="lesson-wrapper cheddar">
+        <div class="lesson-button cheddar" tabindex="0" data-index="0">
+        <div class="regular">
+        <div class="metadata">
+        <span class="language">Objective-C</span>
+        <span class="name">Cheddar</span>
+        <span class="progress-text">418 lines</span>
+        <span class="description">
+        Simple & Instant Task Manager —
+        <span class="selection"> CDIListViewController.m</span>
+        </span>
+        </div>
+        </div>
+        <div class="progress-stub"></div>
+        </div>
+        <span class="details-button" aria-haspopup="true" tabindex="0">details</span>
+        <div class="details-pane" style="display: none;">
+        <table>
+        <tbody>
+        <tr class="detail">
+        <td>website:</td>
+        <td>
+        <a class="website" href="https://cheddarapp.com/">https://cheddarapp.com/</a>
+        </td>
+        </tr>
+        <tr class="detail">
+        <td>source:</td>
+        <td>
+        <a class="source" href="https://github.com/nothingmagical/cheddar-ios">https://github.com/nothingmagical/cheddar-ios</a>
+        </td>
+        </tr>
+        <tr class="detail">
+        <td>license:</td>
+        <td>
+        <a class="license" href="https://github.com/nothingmagical/cheddar-ios/blob/master/LICENSE">https://github.com/nothingmagical/cheddar-ios/blob/master/LICENSE</a>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </li>
+
+       </ul>
+
+
+ .lesson-buttons:after {
+    clear: both;
+}
+ .lesson-buttons:before, #lessons .lesson-buttons:after {
+    content: "";
+    display: table;
+}
+ .lesson-buttons {
+    font-size: 16px;
+    margin: 0 auto;
+    width: 350px;
+    padding: 0;
+    position: relative;
+    width: 65em;
+}
+
+.lesson-wrapper {
+    float: left;
+    list-style-type: none;
+    margin: 0 2% 2% 0;
+    position: relative;
+    width: 500px;
+}
+
+.cheddar .lesson-button:after {
+    background-color: #FF7243;
+    border-color: #FF4C10;
+    color: #A92A00;
+}
+.cheddar.lesson-button {
+    background-color: #FF7243 !important;
+}
+.lesson-button {
+    background-color: #FBFBFB;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #F6F6F6);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    color: #555555;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-out 0s;
+    z-index: 0;
+}
+
+.lesson-button .regular {
+    border: 1px solid #BBBBBB;
+}
+.lesson-button .regular, .lesson-button .progress {
+    border-radius: 5px 5px 5px 5px;
+    position: relative;
+}
+.lesson-button .metadata:after {
+    clear: both;
+}
+.lesson-button .metadata:before, .lesson-button .metadata:after {
+    content: "";
+    display: table;
+}
+.lesson-button .metadata:before, .lesson-button .metadata:after {
+    content: "";
+    display: table;
+}
+.lesson-button .metadata {
+    border-radius: 5px 5px 5px 5px;
+    line-height: 1.2em;
+    padding: 1em;
+    position: relative;
+}
+
+.lesson-button .metadata .language, .lesson-button .metadata .name, .lesson-button .metadata .repeat {
+    color: #6F6F6F;
+    font-size: 1.75em;
+}
+.lesson-button .metadata .language {
+    float: left;
+    margin-right: 0.2em;
+}
+
+.cheddar.lesson-button .metadata .name, .cheddar.lesson-button .metadata .selection, .cheddar.lesson-button .metadata .completed-lines {
+    color: #FF7243;
+}
+.lesson-button .metadata .language, .lesson-button .metadata .name, .lesson-button .metadata .repeat {
+    color: #6F6F6F;
+    font-size: 1.75em;
+}
+
+.lesson-button .progress-text {
+    color: #555555;
+    float: right;
+}
+.lesson-button .metadata .description {
+    display: block;
+    overflow: hidden;
+    padding-top: 1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cheddar.lesson-button .metadata .name, .cheddar.lesson-button .metadata .selection, .cheddar.lesson-button .metadata .completed-lines {
+    color: #FF7243;
+}
+
+.cheddar .progress-stub, .cheddar .bar {
+    background-color: #FF7243;
+}
+.lesson-button .progress-stub {
+    border-radius: 5px 0 0 5px;
+    bottom: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 1%;
+}
+
+.details-button:after {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #888888;
+    content: " ";
+    height: 0;
+    position: absolute;
+    right: 0.5em;
+    top: 0.7em;
+    width: 0;
+}
+.details-button {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: rgba(246, 246, 246, 0.5);
+    border-color: transparent transparent -moz-use-text-color;
+    border-image: none;
+    border-radius: 5px 5px 0 0;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    bottom: 1px;
+    color: #555555;
+    font-size: 0.8em;
+    padding: 0.1em 1.5em 0.1em 0.5em;
+    position: absolute;
+    right: 12px;
+    transition: border-color 0.5s ease-out 0s;
+    z-index: 1;
+}
+
+element.style {
+    display: none;
+}
+.details-pane:before {
+    background-color: #B3B3B3;
+    box-shadow: 0 1px 2px #999999;
+    content: " ";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.details-pane {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F8F8F8;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #EEEEEE);
+    background-repeat: repeat-x;
+    border-color: -moz-use-text-color #999999 #999999;
+    border-image: none;
+    border-radius: 0 0 5px 5px;
+    border-right: 1px solid #999999;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    box-shadow: 0 4px 8px #999999;
+    color: #999999;
+    display: none;
+    left: 12px;
+    overflow: hidden;
+    padding: 0.5em 0.75em;
+    position: absolute;
+    right: 12px;
+    top: 100%;
+    z-index: 100;
+}
+
+.details-pane .detail {
+    line-height: 1.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
