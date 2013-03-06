@@ -18,5 +18,5 @@
     "config": {
         "vendor-dir": "library"
     },
-    "minimum-stability": "alpha"
+    "minimum-stability": "dev"
 }
