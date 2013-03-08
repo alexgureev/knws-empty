@@ -3,3 +3,6 @@
 /codecept.phar
 /nbproject/
 /library/
+/tests/_log/
+/components/
+/public/css/index.php

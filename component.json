@@ -1,0 +1,9 @@
+{
+  "name": "knws-empty",
+  "version": "1.0.0",
+  "main": ["./public/css", "./public/js", "./public/img"],
+  "dependencies": {
+    "jquery": "~1.9.1",
+    "bootstrap": "~2.3.1"
+  }
+}
