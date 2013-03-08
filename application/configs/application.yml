@@ -18,6 +18,6 @@ config:
     host: 'localhost'
     password: 'fVNrJPsKF2UqxvPoqtnG'
     database: 'knws'
-    tableprefix: 'pfx_'
+    prefix: 'pfx_'
   Logger:
     channel: 'Knws'

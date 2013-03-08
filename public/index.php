@@ -12,14 +12,15 @@
  * @link      http://knws.ru
  */
 
-defined('APPLICATION_PATH') || define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../application'));
+defined('APPPATH') || define('APPPATH', realpath(dirname(__FILE__) . '/../application'));
 
-require APPLICATION_PATH . '/Bootstrap.php';
+require APPPATH . '/bootstrap.php';
 
     Knws\Instance::init();
     //Knws\Instance::run();
 
-    Knws\Service\DB::find('projects', array('slug' => 'gg'));
+    Knws\Service\DB::habrhabr(array('a' => 'b'));
+
 /*
     $path = Knws\Service\Request::getPathInfo();
 
