@@ -1,5 +1,9 @@
 <?php
-$loader = require '../library/autoload.php';
+
+define('APPPATH', __DIR__);
+define('LIBPATH', __DIR__ . '..' . DIRECTORY_SEPARATOR . 'library');
+
+$loader = require LIBPATH . DIRECTORY_SEPARATOR .'autoload.php';
 
 require_once "entities/User.php";
 require_once "entities/Product.php";

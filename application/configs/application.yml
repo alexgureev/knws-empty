@@ -21,3 +21,8 @@ config:
     prefix: 'pfx_'
   Logger:
     channel: 'Knws'
+  Doctrine:
+    driver: 'pdo_mysql'
+    user: 'knws'
+    password: 'fVNrJPsKF2UqxvPoqtnG'
+    dbname: 'knws'
