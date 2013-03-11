@@ -1,7 +1,8 @@
 <?php
 
-define('APPPATH', __DIR__);
-define('LIBPATH', __DIR__ . '..' . DIRECTORY_SEPARATOR . 'library');
+
+//defined('APPPATH') || define('APPPATH', __DIR__ . DIRECTORY_SEPARATOR);
+define('LIBPATH', __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'library');
 
 $loader = require LIBPATH . DIRECTORY_SEPARATOR .'autoload.php';
 
