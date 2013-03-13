@@ -20,6 +20,7 @@
     },
     "minimum-stability": "dev",
     "autoload": {
-        "psr-0": {"": "entities"}
+        "psr-0": {"": "application/entities"},
+        "psr-0": {"": "application/repositories"}
     }
 }

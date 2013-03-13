@@ -12,9 +12,11 @@
  * @link      http://knws.ru
  */
 
-defined('PUBPATH') || define('PUBPATH', dirname(__FILE__));
-defined('APPPATH') || define('APPPATH', realpath(PUBPATH . '/../application/'));
-defined('LIBPATH') || define('LIBPATH', realpath(PUBPATH . '/../library/'));
+ini_set('display_errors', 1);
+
+define('PUBPATH', dirname(__FILE__));
+define('APPPATH', realpath(PUBPATH . '/../application/'));
+define('LIBPATH', realpath(PUBPATH . '/../library/'));
 
 require APPPATH . '/bootstrap.php';
 
