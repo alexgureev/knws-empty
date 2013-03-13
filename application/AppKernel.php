@@ -1,6 +1,7 @@
 <?php
 
 use Knws\Kernel;
+use Symfony\Component\HttpFoundation\Response;
 
 class AppKernel extends Kernel
 {
@@ -30,8 +31,16 @@ class AppKernel extends Kernel
         return $bundles;
     }
 
-    public function registerContainerConfiguration(LoaderInterface $loader)
+    /**
+     * handle description
+     * @see http://knws.ru/docs/Acme/AppKernel/handle Documentation of Acme\Kernel->handle().
+     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @return \Symfony\Component\HttpFoundation\Response $responce
+     */
+    public function handle($request)
     {
-        $loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.yml');
+        
+        return $responce;
     }
+
 }

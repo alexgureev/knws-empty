@@ -12,26 +12,14 @@
  * @link      http://knws.ru
  */
 
-defined('APPPATH') || define('APPPATH', realpath(dirname(__FILE__) . '/../application/'));
+defined('PUBPATH') || define('PUBPATH', dirname(__FILE__));
+defined('APPPATH') || define('APPPATH', realpath(PUBPATH . '/../application/'));
+defined('LIBPATH') || define('LIBPATH', realpath(PUBPATH . '/../library/'));
 
 require APPPATH . '/bootstrap.php';
 
-    Knws\Instance::init();
+    //Knws\Instance::init();
     //Knws\Instance::run();
-
-    //Knws\Service\DB::habrhabr(array('a' => 'b'));
-    $bugs = Knws\Service\Doctrine::$instance->getRepository('Bug')->getRecentBugs();
-
-    foreach($bugs AS $bug) {
-        echo $bug->getDescription()." - ".$bug->getCreated()->format('d.m.Y')."\n";
-        echo "    Reported by: ".$bug->getReporter()->getName()."\n";
-        echo "    Assigned to: ".$bug->getEngineer()->getName()."\n";
-        foreach($bug->getProducts() AS $product) {
-            echo "    Platform: ".$product->getName()."\n";
-        }
-        echo "\n";
-    }
-
 
 /*
     $path = Knws\Service\Request::getPathInfo();

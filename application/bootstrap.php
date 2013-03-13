@@ -1,33 +1,20 @@
 <?php
 
+$loader = require LIBPATH . '/autoload.php';
 
-//defined('APPPATH') || define('APPPATH', __DIR__ . DIRECTORY_SEPARATOR);
-define('LIBPATH', __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'library');
+use Symfony\Component\HttpFoundation\Request;
 
-$loader = require LIBPATH . DIRECTORY_SEPARATOR .'autoload.php';
+//require_once "entities/User.php";
+//require_once "entities/Product.php";
+//require_once "entities/Bug.php";
 
-require_once "entities/User.php";
-require_once "entities/Product.php";
-require_once "entities/Bug.php";
+//require_once "repositories/BugRepository.php";
 
-if (!class_exists("Doctrine\Common\Version", false)) {
-    require_once "bootstrap_doctrine.php";
-}
+require_once APPPATH . '/AppKernel.php';
 
-require_once "repositories/BugRepository.php";
+$kernel = new AppKernel('dev', false);
 
-/*
- *
-require_once __DIR__.'/../app/AppKernel.php';
-//require_once __DIR__.'/../app/AppCache.php';
-
-$kernel = new AppKernel('prod', false);
-$kernel->loadClassCache();
-//$kernel = new AppCache($kernel);
 Request::enableHttpMethodParameterOverride();
 $request = Request::createFromGlobals();
 $response = $kernel->handle($request);
 $response->send();
-$kernel->terminate($request, $response);
-
- */
